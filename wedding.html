@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--divinectorweb.com-->
+<head>
+	<meta charset="UTF-8">
+	<title>Amour - Wedding Invitation Website | CSS Flexbox Layout</title>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<style>
+	
+	body, html {
+	
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("wed17.jpeg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+   font-family: 'Dancing Script', cursive;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+.div-1{
+font-family: 'Brush Script MT',cursive;
+}
+
+.bottom-centered {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+#mySearch {
+  width: 30%;
+  font-size: 15px;
+  padding: 3px;
+  border: 1px solid #ddd;
+}
+
+
+.container1 {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+
+
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container1:hover .overlay {
+  opacity: 1;
+}
+.div3{
+font-family: Courier New;
+}
+	
+	</style>
+</head>
+<body>
+	<header>
+	    
+		<h2><a class="logo" href="#">BlossomShine</a></h2>
+		<nav>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">&nbsp;&nbsp;&nbsp;
+			<ul>
+			
+					<a href="#">&nbsp;&nbsp;&nbsp;Home</a>&nbsp;&nbsp;
+				     &nbsp;&nbsp;<a href="#product">Products</a>&nbsp;&nbsp;
+		
+			
+					&nbsp;&nbsp;<a href="#services">Services</a>&nbsp;&nbsp;
+				
+				
+					&nbsp;&nbsp;<a href="#about">About</a>&nbsp;&nbsp;
+			
+				
+					&nbsp;<a href="#contact">Contact <!--Us--></a></br>
+						
+			</ul>
+			
+		</nav>
+	</header>
+	
+	<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  }
+  </script>
+	
+	<section class="banner-area">
+		<div class="banner-img"></div>
+		<div class="bottom-centered">
+		<h1>Save Amazing Memorizing Moments of Life with us!</h1>
+		
+		<h5>❤Create Your WEDDING Tunes And Live A Joyfull Life With BlossomShine❤</h5>
+		</div>
+	</section>
+	<section class="wedding-area" id="product">
+		<h3 class="section-title">𝄳 Wedding Tunes 𝄳</h3>
+		<ul class="wedding-content">
+			<li>
+				<div class="container1">
+				<div class="img">
+                			
+			<img  src="wed9.jpeg" alt="" height="300px">
+            <div class="overlay">Party Invitations cards</div>
+  </div></div>
+				
+				
+			</li>
+			<li>
+			
+			
+				<div class="container1">
+				<div class="img">
+                			
+			<img  src="wed10.jpeg" alt="" height="300px">
+            <div class="overlay">Ring Ceremony cards</div>
+			
+  </div></div>
+				
+				
+				
+			</li>
+			<li>
+				<div class="container1">
+				<div class="img">
+                			
+			<img  src="wed11.jpeg" alt="" height="300px">
+            <div class="overlay">Sangeet Ceremony cards</div>
+			
+
+  </div></div>
+				
+			</li>
+			</ul>
+			</br></br>
+			<ul class="wedding-content">
+			<li>
+				<div class="container1">
+				<div class="img">
+                			
+			<img  src="wed12.jpeg" alt="" height="300px">
+            <div class="overlay">Elopement Ceremony cards</div>
+  </div></div>
+				
+				
+			</li>
+			<li>
+				<div class="container1">
+				<div class="img">
+                			
+			<img  src="wed20.jpeg" alt="" height="300px">
+            <div class="overlay">Birthday cards</div>
+  </div></div>
+				
+				
+			</li>
+			<li>
+				<div class="container1">
+				<div class="img">
+                			
+			<img  src="wed14.jpeg" alt="" height="300px">
+            <div class="overlay">Interfaith Wedding cards</div>
+  </div></div>
+				
+			</li>
+		</ul>
+	</section>
+	
+	<section class="couple-area" >
+		<h3 class="section-title">The Happy Couple</h3>
+		<ul class="couple-content">
+			<li class="couple-left"></li>
+			<li class="couple-right">
+				<p><h3>"Affection is when you see someone's strengths; Care is when you accept someone's flaws."</h3></p>
+				<p>&nbsp;&nbsp;"Be Always There for your one And Make Life's Amazing Moments With Them ..Create It And Save It with us..Afterall Life Is All About Next Step..**"</p>
+			</li>
+		</ul>
+	</section>
+	
+	
+	<section class="rsvp-area" id="services">
+		<h3 class="section-title">Services</h3>
+		
+
+<h2 style="text-align:center"></h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="serv2.jpeg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2><center>24/7 Hours </center></h2>
+      
+        <p>Any Time Any Where We Are always ready 24/7 hours for your help..!</p>
+        <p><button class="button">24/7 </button></p>
+		
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="serv5.jpeg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2><center>Fast Delivary</center></h2>
+     
+        <p>No Extra Charges Will Apply On Your First Delivary!It Will Be *FREE*</p>
+        
+        <p><button class="button">fast delivary</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="serv6.jpeg" alt="John" style="width:100%">
+      <div class="container">
+        <h2><center>Order Now</center></h2>
+       
+        <p><strong>Why Are You Awaiting for ? If You Got 50% Discount On your First Order..!</strong></p>
+        
+        <p><button class="button">order now</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+	</section>
+	
+	
+	<section class="rsvp-area" id="about">
+		<h3 class="section-title">About Us</h3>
+		
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="cust10.jpeg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2><center>Jiya Mallik</center></h2>
+        <p class="title">CEO & Founder</p>
+        <p>An Best Designer Of The Year.She Provided All Needed Designs in format</p>
+        <p>jiya@gmail.com</p>
+		
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="inv1.jpeg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2><center>Mahira Rawat</center></h2>
+        <p class="title">Art-Design Director</p>
+        <p>Mahira helps changes that anyone is looking for and help them with best they deserve.</p>
+        <p>mahi456@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="inv3.jpeg" alt="John" style="width:100%">
+      <div class="container">
+        <h2><center>Mikal Andre</center></h2>
+        <p class="title">CEIOV Designer</p>
+        <p>Mikal prides himself on helping your toughest challenges.He loves getting creative work.</p>
+        <p>mikalandre123@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+	</section>
+	
+	<div class="hero-image">
+  <div class="hero-text">
+    <div class="div3">
+    <h2><i>Your Happiness Is Our Responsibility</i></h2>
+   
+    <button><a href="#">Click Here To Visit Our Site</a></button>
+  </div>
+</div>
+</div>
+
+<section class="rsvp-area" id="contact">
+<h3 class="section-title">Contact Us</h3>
+<div class="bg-img1">
+  <form action="/action_page.php" class="container1">
+    <h1><center>Login</center></h1>
+
+     <label for="name"><b>Full Name</b></label>
+    <input type="text" placeholder="Enter FullName" name="name" required>
+	
+	<label for="contact"><b>Conatct No</b></label>
+    <input type="text" placeholder="Enter Mobile No" name="contact" required>
+	
+	<label for="address"><b>Address</b></label>
+    <input type="text" placeholder="Enter Address" name="address" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    
+
+    <button type="submit" class="btn1">Submit</button>
+  </form>
+</div>
+</section>
+<footer>
+    <div class="content">
+      <div class="top">
+        <div class="logo-details">
+          <i class="fab fa-slack"></i>
+          <span class="logo_name">BlossomShine </span>
+        </div>
+        <div class="media-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="link-boxes">
+        <ul class="box">
+          <li class="link_name">Invitation Cards</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Get started</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Services</li>
+          <li><a href="#">Card design</a></li>
+          <li><a href="#">Video design maker</a></li>
+          <li><a href="#">Logo design</a></li>
+          <li><a href="#">Banner design</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Address</li>
+          <li><a href="#">Bajirao Road 690, Besera Hotel Building,Pune</a></li>
+		   <li><a href="#">Hinjewadi Phase 1 Rd, opposite to Birlasoft Junction,Pune</a></li>
+          <li><a href="#">blossomshine@gmail.com</a></li>
+          <li><a href="#">1234567890</a></li>
+		  <li><a href="#">9284362542</a></li>
+        </ul>
+       
+        <ul class="box input-box">
+          <li class="link_name">To Know More</li>
+          <li><input type="text" placeholder="Enter your email"></li>
+          <li><input type="button" value="Subscribe"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2022 <a href="#">ArchnaBhalerao.</a>All rights reserved</span>
+        
+      </div>
+    </div>
+  </footer>
+
+
+	
+</body>
+</html>
